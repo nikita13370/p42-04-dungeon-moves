@@ -38,8 +38,8 @@ public class Game
 
         switch (word)
         {
-            case "w": message = Actions.Move(this, 0, 1); break;
-            case "s": message = Actions.Move(this, 0, -1); break;
+            case "w": message = Actions.Move(this, 0, -1); break;
+            case "s": message = Actions.Move(this, 0, 1); break;
             case "a": message = Actions.Move(this, -1, 0); break;
             case "d": message = Actions.Move(this, 1, 0); break;
             case "use": message = Actions.UseItem(this, number); break;
