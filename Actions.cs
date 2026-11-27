@@ -15,7 +15,7 @@ public static class Actions
         int newX = player.X + dx;
         int newY = player.Y + dy;
 
-        if (game.Map.IsWall(player.X, player.Y))
+        if (game.Map.IsWall(newX, newY))
             return "Там стена.";
 
         Monster monster = game.FindMonsterAt(newX, newY);
