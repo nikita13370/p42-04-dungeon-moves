@@ -60,7 +60,7 @@ public static class Actions
     public static string UseItem(Game game, int number)
     {
         Player player = game.Player;
-        int index = number;
+        int index = number - 1;
 
         Item item = player.Bag.Get(index);
         if (item == null)
