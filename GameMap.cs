@@ -30,7 +30,7 @@ public class GameMap
     // Символ клетки (x, y). Вызывать только для клеток внутри карты.
     public char TileAt(int x, int y)
     {
-        return _rows[x][y];
+        return _rows[y][x];
     }
 
     // Клетка (x, y) — стена. Всё, что за краем карты, тоже считается стеной.
